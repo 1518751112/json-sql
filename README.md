@@ -9,13 +9,13 @@ This library **is not** a driver, it is only translator, you should use specific
 Install it with NPM or add it to your package.json:
 
 ``` bash
-$ npm install json-sql
+$ npm install @tg1518/json-sql
 ```
 
 Then:
 
 ``` js
-var jsonSql = require('json-sql')();
+var jsonSql = require('@tg1518/json-sql')();
 
 var sql = jsonSql.build({
 	type: 'select',

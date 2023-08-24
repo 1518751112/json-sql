@@ -1,12 +1,12 @@
 {
-  "name": "json-sql",
+  "name": "@tg1518/json-sql",
   "description": "node.js json to sql queries mapper",
-  "version": "0.4.13",
-  "author": "Artem Zhukov <artzhuchka@gmail.com>",
+  "version": "0.5.0",
+  "author": "tg1518",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:2do2go/json-sql.git"
+    "url": "git@github.com:1518751112/json-sql.git"
   },
   "keywords": [
     "json-sql",
@@ -27,5 +27,9 @@
     "gulp-jshint": "^1.10.0",
     "gulp-mocha": "^2.0.1"
   },
-  "main": "./lib/index"
+  "main": "./lib/index",
+  "bugs": {
+    "url": "https://github.com/1518751112/json-sql/issues"
+  },
+  "homepage": "https://github.com/1518751112/json-sql#readme"
 }
