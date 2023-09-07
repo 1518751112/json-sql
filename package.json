@@ -1,7 +1,7 @@
 {
   "name": "@tg1518/json-sql",
   "description": "node.js json to sql queries mapper",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "tg1518",
   "license": "MIT",
   "repository": {
