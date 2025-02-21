@@ -13,7 +13,7 @@ $ npm install @tg1518/json-sql
 ```
 
 Then:
-
+查询有字段别名 三种写法 可以调用hasLiteral函数直接用sql语句
 ``` js
 var jsonSql = require('@tg1518/json-sql')();
 
@@ -21,6 +21,26 @@ var sql = jsonSql.build({
 	type: 'select',
 	table: 'users',
 	fields: ['name', 'age'],
+	condition: {name: 'Max', id: 6}
+});
+var sql2 = jsonSql.build({
+	type: 'select',
+	table: 'users',
+	fields: [
+	{name:'users.id',alias: 'id'},
+	'name', 'age',
+	{name:hasLiteral('if(test_paper_user.type="是",4,3)'),alias:"type"}],
+	condition: {name: 'Max', id: 6}
+});
+var sql3 = jsonSql.build({
+	type: 'select',
+	table: 'users',
+	fields: {
+	"users.id":"id",
+	"name":"name",
+	"age":"age",
+	[hasLiteral('if(test_paper_user.type="是",4,3)')]:"type"
+	},
 	condition: {name: 'Max', id: 6}
 });
 
